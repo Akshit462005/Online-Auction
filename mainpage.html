@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMI Calculator</title>
+<link rel="stylesheet" href="styles1.css">
+<style>
+body {
+   font-family: Arial, sans-serif;
+   background-image: url(Untitled.png);
+}
+h1 {
+   color: #333;
+}
+label, input, select, button {
+   margin-top: 10px;
+}
+#button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
+button:hover {
+   background-color: #6cdf70;
+   color: white;
+}
+#result {
+   font-size: 24px;
+   font-weight: bold;
+   color: #333;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header .row{
+    margin-top: 70px;
+
+}
+a{
+    text-decoration: none;
+    color:azure;
+}
+
+</style>
+ 
+<body>
+
+  <div class="header">
+    <div class="container">
+    <div class="navbar">
+    <div class="logo">
+        <img src= "BMI.png" width="130px">
+    </div>
+    <nav>
+        <ul> 
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="">Workout</a></li>
+            <li><a href="about1.html">About</a></li>
+            <li><a href="login.html">Log In</a></li>
+             </ul>
+    </nav>
+    </div>
+    <marquee align="center" style="background-color: black;color: white;height: 30px;font-size: 20px;margin-left: 7px;margin-right: 7px;border-radius: 3px;">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</marquee>
+<br>
+  <br>
+  <div>
+    
+    <div class="calculator">
+      <h1>BMI Calculator</h1>
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" placeholder="Enter height in cm"><br><br>
+
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="Enter weight in kg"><br><br>
+
+      <button onclick="calculateBMI()" style="background-color: dodgerblue;color: white;">Calculate BMI</button>
+
+      <div class="result">
+        <h2>Your BMI:</h2>
+        <p id="bmiResult"></p>
+        <canvas id="bmiChart" width="400" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+<br>
+  <footer>
+  <h4 align="center" style="background-color: black;color: white;height: 30px;;margin-left: 7px;margin-right: 7px;border-radius: 3px;">&copy; 2023 BMI Calculator. All Rights Reserved.</h4>
+
+<div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>

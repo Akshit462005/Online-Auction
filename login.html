@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login - BMI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <center><h2>Login</h2><br>
+    <form  id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" maxlength="6" required><br><br>
+
+      <button type="submit" onclick="validateLogin()">Login</button>
+    </form></center>
+    <p id="loginMessage"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
